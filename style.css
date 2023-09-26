@@ -16,15 +16,35 @@ body{
     justify-content: space-evenly;
     height: 100%;
     margin: 0;
-    
+    transition: background 0.5s linear, color 0.5s linear;
 }
+
+input{visibility: hidden;}
+
+body.dark{
+    background-color: black;
+    color: white;
+}
+
+label{
+    background-color: black;
+    border-radius: 40%;
+    display: inline-block;
+    cursor: pointer;
+    width: 3vw;
+    height: 2vh;
+    cursor: pointer;
+}
+
+body.dark label{background-color: white;}
+
 
 
 
 .first{
     display: flex;
     flex-direction: column;
-    max-width: 20%;
+    max-width: 22%;
     height: 20%;
     /* background-color: yellow; */
     
